@@ -13,6 +13,13 @@ $ go get github.com/simplyianm/spillway
 ## Usage
 
 ```bash
+$ spillway -h
+Usage of spillway:
+  -rate duration
+        The maximum output rate. (default 1s)
+```
+
+```bash
 # Print a random line every second
 cat /dev/urandom | spillway -r 1s
 ```
